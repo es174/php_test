@@ -1,4 +1,4 @@
-<?
+<?php
 
 class Database
 {
@@ -17,7 +17,7 @@ class Database
         }
     }
 
-    public function executeSql($sql) 
+    public function executeSql($sql)
     {
         $result = mysqli_query($this->link, $sql);
 
