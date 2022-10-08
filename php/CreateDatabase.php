@@ -16,5 +16,5 @@ $db->executeSql('CREATE TABLE ' . getenv('DATABASE_NAME') . '.article (
   `userId` int NOT NULL,
   `label` varchar(255) NOT NULL,
   `text` varchar(1555) NOT NULL,
- FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE
+ FOREIGN KEY (`userId`) REFERENCES `user` (`id`) ON DELETE CASCADE
 );');
